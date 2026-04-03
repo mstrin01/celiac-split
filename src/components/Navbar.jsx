@@ -1,51 +1,27 @@
 import React from "react";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo.png"; 
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav style={styles.nav}>
-      <a href="#" style={styles.logoLink}>
-        <img src={Logo} alt="Logo" style={styles.logo} />
-        <span style={{ color: "#084F6E", fontWeight: 600 }}>Celiac Split</span>
+    <nav>
+      <a href="/" className="logo">
+        <img src={Logo} alt="Logo" className="logo-icon" />
+        <div className="logo-text">
+          <span>Splitsko-dalmatinsko</span>
+          <span>društvo za celijakiju</span>
+        </div>
       </a>
-      <ul style={styles.navLinks}>
-        <li><a href="#" style={styles.link}>Početna</a></li>
-        <li><a href="#about" style={styles.link}>O nama</a></li>
-        <li><a href="#guide" style={styles.link}>Vodič</a></li>
-        <li><a href="#contact" style={styles.link}>Kontakt</a></li>
+      <ul className="nav-links">
+        <li><a href="/" className="active">Početna</a></li>
+        <li><a href="/about">O nama</a></li>
+        <li><a href="/guide">Bezglutenski vodič</a></li>
+        <li><a href="/events">Događanja</a></li>
+        <li><a href="/contact">Kontakt</a></li>
       </ul>
+      <a href="/join" className="btn-nav">Postanite član</a>
     </nav>
   );
-};
-
-const styles = {
-  nav: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 50px",
-    backgroundColor: "#E8E0FB",
-  },
-  logoLink: {
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-    textDecoration: "none",
-  },
-  logo: {
-    width: "50px",
-    height: "50px",
-  },
-  navLinks: {
-    display: "flex",
-    gap: "20px",
-    listStyle: "none",
-  },
-  link: {
-    textDecoration: "none",
-    color: "#11062C",
-    fontWeight: 500,
-  },
 };
 
 export default Navbar;
