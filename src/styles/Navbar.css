@@ -1,8 +1,12 @@
-/* Reset and prevent scroll */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100%;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -11,10 +15,11 @@ nav {
   top: 0;
   z-index: 100;
   width: 100%;
+  margin: 0;
+  padding: 0 40px;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #D0E8F2;
-  padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,10 +38,7 @@ nav {
   height: 44px;
   border-radius: 50%;
   border: 2px solid #084F6E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  object-fit: cover; /* ensures the image fits the circle */
+  object-fit: cover;
 }
 
 .logo-text {
@@ -53,16 +55,20 @@ nav {
 }
 
 .logo-text span:last-child {
-  font-size: 11px;
-  color: #5a7a8a;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #084F6E;
   line-height: 1.2;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -72,34 +78,34 @@ nav {
   color: #5a7a8a;
   padding: 6px 12px;
   border-radius: 8px;
-  transition: color 0.2s, background 0.2s;
+  transition: 0.2s;
 }
 
-.nav-links a:hover { 
-  color: #084F6E; 
-  background: #E8F4FA; 
+.nav-links a:hover {
+  color: #084F6E;
+  background: #E8F4FA;
 }
 
-.nav-links a.active { 
-  color: #084F6E; 
-  font-weight: 600; 
+.nav-links a.active {
+  color: #084F6E;
+  font-weight: 600;
 }
 
 .btn-nav {
   background: #084F6E;
-  color: #fff !important;
+  color: white !important;
   padding: 8px 20px !important;
-  border-radius: 30px !important;
-  font-weight: 600 !important;
-  transition: background 0.2s, transform 0.1s !important;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.btn-nav:hover { 
-  background: #0D6A92 !important; 
-  transform: translateY(-1px); 
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
+  nav {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }

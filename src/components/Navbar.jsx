@@ -18,8 +18,9 @@ const Navbar = () => {
         <li><a href="/guide">Bezglutenski vodič</a></li>
         <li><a href="/events">Događanja</a></li>
         <li><a href="/contact">Kontakt</a></li>
+        <li><a href="/join" className="btn-nav">Postanite član</a></li>
       </ul>
-      <a href="/join" className="btn-nav">Postanite član</a>
+      
     </nav>
   );
 };
