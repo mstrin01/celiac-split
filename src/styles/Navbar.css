@@ -26,7 +26,7 @@ nav {
   height: 70px;
 }
 
-.logo {
+nav .logo {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -41,12 +41,12 @@ nav {
   object-fit: cover;
 }
 
-.logo-text {
+nav .logo-text {
   display: flex;
   flex-direction: column;
 }
 
-.logo-text span:first-child {
+nav .logo-text span:first-child {
   font-family: 'Lora', serif;
   font-size: 14px;
   font-weight: 600;
@@ -54,7 +54,7 @@ nav {
   line-height: 1.2;
 }
 
-.logo-text span:last-child {
+nav .logo-text span:last-child {
   font-family: 'Lora', serif;
   font-weight: 600;
   font-size: 14px;
