@@ -1,10 +1,19 @@
-import React from "react";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./App.css";
 
+function App() {
+  return (
+    <div className="app">
+      <Navbar />
 
-function App(){
-  return <Home />;
+      <main>
+        {/* your page content here */}
+      </main>
 
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

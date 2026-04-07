@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-top">
+        {/* LEFT */}
         <div className="footer-brand">
           <div className="logo">
             <img
@@ -13,7 +14,7 @@ const Footer = () => {
               alt="Logo društva"
               className="logo-icon"
             />
-        </div>
+
             <div className="logo-text">
               <span style={{ color: "white" }}>
                 Splitsko-dalmatinsko
@@ -23,15 +24,11 @@ const Footer = () => {
               </span>
             </div>
           </div>
-
-          <p className="footer-tagline">
-            Podrška, edukacija i zajednica za osobe s celijakijom u
-            Splitsko-dalmatinskoj županiji.
-          </p>
         </div>
 
+        {/* CENTER */}
         <div className="footer-links">
-          <h4>Stranice</h4>
+          <h4>Sitemap</h4>
           <ul>
             <li><a href="/">Početna</a></li>
             <li><a href="#about">O nama</a></li>
@@ -41,15 +38,20 @@ const Footer = () => {
           </ul>
         </div>
 
-        
+        {/* RIGHT */}
+        <div className="footer-info">
+          <p>
+            Podrška, edukacija i zajednica za osobe s
+            celijakijom u Splitsko-dalmatinskoj županiji.
+          </p>
+        </div>
+      </div>
 
       <div className="footer-bottom">
         <p>
           © 2026 Splitsko-dalmatinsko društvo za celijakiju.
           Sva prava pridržana.
         </p>
-
-       
       </div>
     </footer>
   );
