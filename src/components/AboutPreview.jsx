@@ -18,13 +18,11 @@ const AboutPreview = () => {
           bolesti probavnog sustava.
         </p>
 
-        <a href="/about" className="about-preview-btn">
-          Saznajte više o nama
+        <a href="/contact" className="about-preview-btn">
+          Povežimo se
         </a>
         
-        <a href="/contact" className="about-preview-btn secondary">
-            Povežimo se
-          </a>
+
       </div>
     </section>
   );

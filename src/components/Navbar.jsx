@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/logo.png"; 
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -13,11 +14,11 @@ const Navbar = () => {
         </div>
       </a>
       <ul className="nav-links">
-        <li><a href="/" className="active">Početna</a></li>
+        <Link to="/">Početna</Link>
         <li><a href="/about">O nama</a></li>
         <li><a href="/guide">Bezglutenski vodič</a></li>
         <li><a href="/events">Događanja</a></li>
-        <li><a href="/contact">Kontakt</a></li>
+        <Link to="/contact">Kontakt</Link>
         <li><a href="/join" className="btn-nav">Postanite član</a></li>
       </ul>
       
