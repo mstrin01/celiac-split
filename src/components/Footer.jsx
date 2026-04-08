@@ -28,7 +28,7 @@ const Footer = () => {
 
         {/* CENTER */}
         <div className="footer-links">
-          <h4>Sitemap</h4>
+          
           <ul>
             <li><a href="/">Početna</a></li>
             <li><a href="#about">O nama</a></li>
