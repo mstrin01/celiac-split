@@ -1,28 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import ContactPage from "./components/ContactPage";
+import GuidePage from "./pages/GuidePage";
 
 import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="app">
         <Navbar />
 
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/guide" element={<GuidePage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

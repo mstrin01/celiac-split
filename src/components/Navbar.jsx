@@ -16,7 +16,7 @@ const Navbar = () => {
       <ul className="nav-links">
         <Link to="/">Početna</Link>
         <li><a href="/about">O nama</a></li>
-        <li><a href="/guide">Bezglutenski vodič</a></li>
+        <a href="/guide">Bezglutenski vodič</a>
         <li><a href="/events">Događanja</a></li>
         <Link to="/contact">Kontakt</Link>
         <li><a href="/join" className="btn-nav">Postanite član</a></li>
