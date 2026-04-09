@@ -7,6 +7,7 @@ import ContactPage from "./components/ContactPage";
 import GuidePage from "./pages/GuidePage";
 
 import "./App.css";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/guide" element={<GuidePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} ></Route>
           </Routes>
         </main>
 

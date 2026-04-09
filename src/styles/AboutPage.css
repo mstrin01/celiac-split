@@ -1,0 +1,158 @@
+.about-page {
+  width: 100%;
+  background: #ffffff;
+}
+
+/* HERO */
+.about-hero {
+  padding: 100px 5% 80px;
+  text-align: center;
+  background: linear-gradient(to bottom, #eaf6fb, #ffffff);
+  border-bottom: 1px solid #d0e8f2;
+}
+
+.about-label {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: #e8f4fa;
+  color: #084f6e;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-size: 52px;
+  color: #084f6e;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5a7a8a;
+}
+
+/* CARDS */
+.about-cards {
+  padding: 80px 5%;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  width: 320px;
+  padding: 32px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: 0.2s;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+}
+
+.about-card span {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.about-card h3 {
+  font-size: 22px;
+  color: #084f6e;
+  margin-bottom: 14px;
+}
+
+.about-card p {
+  color: #5a7a8a;
+  line-height: 1.7;
+}
+
+/* STORY */
+.about-story {
+  padding: 80px 5%;
+  text-align: center;
+  background: #f8fcfe;
+}
+
+.about-story h2 {
+  font-size: 40px;
+  color: #084f6e;
+  margin-bottom: 24px;
+}
+
+.about-story blockquote {
+  font-size: 28px;
+  line-height: 1.6;
+  color: #084f6e;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.about-story p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #5a7a8a;
+}
+
+/* CHECKLIST */
+.about-checklist {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.about-checklist h2 {
+  font-size: 40px;
+  color: #084f6e;
+  margin-bottom: 30px;
+}
+
+.about-checklist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-checklist li {
+  font-size: 18px;
+  color: #5a7a8a;
+  margin-bottom: 16px;
+}
+
+/* CTA */
+.about-cta {
+  padding: 90px 5%;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #eaf6fb);
+}
+
+.about-cta h2 {
+  font-size: 38px;
+  color: #084f6e;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.about-cta-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #084f6e;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.about-cta-btn:hover {
+  background: #0d6a92;
+}
