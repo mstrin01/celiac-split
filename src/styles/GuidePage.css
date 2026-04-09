@@ -93,6 +93,15 @@
   color: #5A7A8A;
   line-height: 1.7;
 }
+.guide-map {
+  width: 100%;
+  padding: 40px 5%;
+}
+
+.guide-map iframe {
+  display: block;
+  width: 100%;
+}
 
 @media (max-width: 900px) {
   .guide-categories {

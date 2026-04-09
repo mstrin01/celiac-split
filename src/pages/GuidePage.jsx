@@ -7,7 +7,6 @@ const GuidePage = () => {
   return (
     <main className="guide-page">
       <section className="guide-hero">
-        <span className="guide-label">Bezglutenski vodič</span>
         <h1>Bezglutenski vodič kroz Split</h1>
         <p>
           Pronađite restorane, pekare i trgovine s ponudom

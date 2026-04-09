@@ -1,25 +1,23 @@
 import React from "react";
-import GuideMap from "../components/GuideMap";
-import GuideCategories from "../components/GuideCategories";
-import "../styles/GuidePage.css";
 
-const GuidePage = () => {
+const GuideMap = () => {
   return (
-    <main className="guide-page">
-      <section className="guide-hero">
-        <span className="guide-label">Bezglutenski vodič</span>
-        <h1>Bezglutenski vodič kroz Split</h1>
-        <p>
-          Pronađite restorane, pekare i trgovine s ponudom
-          bez glutena u Splitu i okolici.
-        </p>
-      </section>
-
-      <GuideMap />
-
-      <GuideCategories />
-    </main>
+    <section className="guide-map">
+      <iframe
+        title="Mapa bezglutenskih restorana u Splitu"
+        src="https://www.google.com/maps?q=Split,Croatia&z=13&output=embed"
+        width="100%"
+        height="420"
+        style={{
+          border: "0",
+          borderRadius: "20px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
+        }}
+        loading="lazy"
+        allowFullScreen
+      ></iframe>
+    </section>
   );
 };
 
-export default GuidePage;
+export default GuideMap;
