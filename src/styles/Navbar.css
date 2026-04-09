@@ -100,12 +100,74 @@ nav .logo-text span:last-child {
   text-decoration: none;
 }
 
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #084F6E;
+  cursor: pointer;
+}
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #084F6E;
+  cursor: pointer;
+  z-index: 300;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   nav {
-    padding: 0 20px;
+    padding: 0 5%;
+    position: relative;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .nav-links {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    padding: 100px 24px 24px;
+    gap: 18px;
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.08);
+    transition: right 0.3s ease;
+    z-index: 250;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #084F6E;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nav-links .btn-nav {
+    text-align: center;
+    margin-top: 8px;
   }
 }

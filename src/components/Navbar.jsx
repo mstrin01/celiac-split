@@ -1,27 +1,63 @@
-import React from "react";
-import Logo from "../assets/images/logo.png"; 
+import React, { useState } from "react";
+import Logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav>
-      <a href="/" className="logo">
+      <Link to="/" className="logo">
         <img src={Logo} alt="Logo" className="logo-icon" />
         <div className="logo-text">
           <span>Splitsko-dalmatinsko</span>
           <span>društvo za celijakiju</span>
         </div>
-      </a>
-      <ul className="nav-links">
-        <Link to="/">Početna</Link>
-        <li><a href="/about">O nama</a></li>
-        <a href="/guide">Bezglutenski vodič</a>
-        <li><a href="/events">Događanja</a></li>
-        <Link to="/contact">Kontakt</Link>
-        <li><a href="/join" className="btn-nav">Postanite član</a></li>
+      </Link>
+
+      {/* Desktop links */}
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <li>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Početna</Link>
+        </li>
+        <li>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>O nama</Link>
+        </li>
+        <li>
+          <Link to="/guide" onClick={() => setMenuOpen(false)}>
+            Bezglutenski vodič
+          </Link>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/splitglutenfree/events?locale=hr_HR"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+          >
+            Događanja
+          </a>
+        </li>
+        <li>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            Kontakt
+          </Link>
+        </li>
+        <li>
+          <a href="/join" className="btn-nav">
+            Postanite član
+          </a>
+        </li>
       </ul>
-      
+
+      {/* Mobile hamburger */}
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
     </nav>
   );
 };

@@ -38,7 +38,7 @@ const ContactPage = () => {
               <div className="contact-item-text">
                 <span>Adresa</span>
                 <a href="#">
-                  Ul. ban Mladenova 9, Split
+                  Ul. ban Mladenova 9/II, Split
                 </a>
               </div>
             </div>

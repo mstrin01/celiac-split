@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-top">
-        {/* LEFT */}
         <div className="footer-brand">
           <div className="logo">
             <img
@@ -26,19 +25,18 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* CENTER */}
         <div className="footer-links">
           
           <ul>
             <li><a href="/">Početna</a></li>
-            <li><a href="#about">O nama</a></li>
-            <li><a href="#guide">Bezglutenski vodič</a></li>
-            <li><a href="#events">Događanja</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="/about">O nama</a></li>
+            <li><a href="/guide">Bezglutenski vodič</a></li>
+            <li><a href="https://www.facebook.com/splitglutenfree/events?locale=hr_HR">Događanja</a></li>
+            <li><a href="/contact">Kontakt</a></li>
           </ul>
         </div>
 
-        {/* RIGHT */}
+        
         <div className="footer-info">
           <p>
             Podrška, edukacija i zajednica za osobe s
