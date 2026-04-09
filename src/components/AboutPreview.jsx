@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/AboutPreview.css";
+import { Link } from "react-router-dom";
 
 const AboutPreview = () => {
   return (
@@ -18,9 +19,9 @@ const AboutPreview = () => {
           bolesti probavnog sustava.
         </p>
 
-        <a href="/contact" className="about-preview-btn">
+        <Link to="/contact" className="about-preview-btn">
           Povežimo se
-        </a>
+        </Link>
         
 
       </div>

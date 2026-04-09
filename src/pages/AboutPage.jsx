@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/AboutPage.css";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -78,9 +79,9 @@ const AboutPage = () => {
           Ako si iz Splita ili okolice i živiš bez glutena —
           na pravom si mjestu 💙
         </h2>
-        <a href="/contact" className="about-cta-btn">
+        <Link to="/contact" className="about-cta-btn">
           Povežimo se
-        </a>
+        </Link>
       </section>
     </main>
   );

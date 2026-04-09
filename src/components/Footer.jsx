@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logo.png";
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,11 +29,12 @@ const Footer = () => {
         <div className="footer-links">
           
           <ul>
-            <li><a href="/">Početna</a></li>
-            <li><a href="/about">O nama</a></li>
-            <li><a href="/guide">Bezglutenski vodič</a></li>
-            <li><a href="https://www.facebook.com/splitglutenfree/events?locale=hr_HR">Događanja</a></li>
-            <li><a href="/contact">Kontakt</a></li>
+            <li><Link to="/">Početna</Link></li>
+            <li><Link to="/about">O nama</Link></li>
+            <li><Link to="/guide">Bezglutenski vodič</Link></li>
+            <li><a href="https://www.facebook.com/splitglutenfree/events?locale=hr_HR" target="_blank"
+            rel="noopener noreferrer">Događanja</a></li>
+            <li><Link to="/contact">Kontakt</Link></li>
           </ul>
         </div>
 

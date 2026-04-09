@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Hero.css";
 import HeroImage from "../assets/images/hero.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -20,13 +21,13 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          <a href="/join" className="hero-btn primary">
+          <Link to="/join" className="hero-btn primary">
             Postanite član
-          </a>
+          </Link>
 
-          <a href="/about" className="hero-btn secondary">
+          <Link to="/about" className="hero-btn secondary">
             Saznajte više
-          </a>
+          </Link>
         </div>
       </div>
 
