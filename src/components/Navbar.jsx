@@ -30,14 +30,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <a
-            href="https://www.facebook.com/splitglutenfree/events?locale=hr_HR"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMenuOpen(false)}
-          >
-            Događanja
-          </a>
+          <Link to="/donations" onClick={() => setMenuOpen(false)}>
+            Donacije
+          </Link>
         </li>
         <li>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>

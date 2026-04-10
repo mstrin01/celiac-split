@@ -32,8 +32,7 @@ const Footer = () => {
             <li><Link to="/">Početna</Link></li>
             <li><Link to="/about">O nama</Link></li>
             <li><Link to="/guide">Bezglutenski vodič</Link></li>
-            <li><a href="https://www.facebook.com/splitglutenfree/events?locale=hr_HR" target="_blank"
-            rel="noopener noreferrer">Događanja</a></li>
+            <li><Link to="/donations">Donacije</Link></li>
             <li><Link to="/contact">Kontakt</Link></li>
           </ul>
         </div>
