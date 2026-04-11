@@ -3,6 +3,7 @@
   background: #ffffff;
 }
 
+/* HERO */
 .donations-hero {
   padding: 100px 5% 70px;
   text-align: center;
@@ -35,8 +36,9 @@
   color: #5a7a8a;
 }
 
+/* CARD */
 .donation-card {
-  max-width: 850px;
+  max-width: 900px;
   margin: 60px auto;
   padding: 40px;
   border-radius: 24px;
@@ -47,18 +49,28 @@
 .donation-card h2 {
   text-align: center;
   color: #084f6e;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
+}
+
+/* PAYMENT + QR LAYOUT */
+.donation-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .payment-info {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .payment-row {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   padding-bottom: 14px;
   border-bottom: 1px solid #e8f4fa;
 }
@@ -69,8 +81,34 @@
 
 .payment-row strong {
   color: #084f6e;
+  text-align: right;
 }
 
+/* QR */
+.qr-box {
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.qr-box p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #5a7a8a;
+}
+
+.qr-box img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+/* MESSAGE */
 .donation-message {
   text-align: center;
   padding: 70px 5%;
@@ -84,6 +122,7 @@
 .donation-message p {
   color: #5a7a8a;
   font-size: 17px;
+  line-height: 1.7;
 }
 
 /* TABLET */
@@ -107,8 +146,13 @@
     margin: 50px auto;
   }
 
-  .payment-row {
-    gap: 12px;
+  .donation-layout {
+    gap: 24px;
+  }
+
+  .qr-box img {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -141,7 +185,14 @@
     margin-bottom: 24px;
   }
 
+  .donation-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
   .payment-info {
+    width: 100%;
     gap: 16px;
   }
 
@@ -159,7 +210,13 @@
   .payment-row strong {
     font-size: 15px;
     line-height: 1.5;
+    text-align: left;
     word-break: break-word;
+  }
+
+  .qr-box img {
+    width: 140px;
+    height: 140px;
   }
 
   .donation-message {

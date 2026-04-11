@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/DonationsPage.css";
+import qr from "../assets/images/qr.jpeg";
 
 const DonationsPage = () => {
   return (
@@ -40,7 +41,7 @@ const DonationsPage = () => {
 
           <div className="payment-row">
             <span>Poziv na broj</span>
-            <strong>00 2026</strong>
+            <strong>OIB platitelja</strong>
           </div>
 
           <div className="payment-row">

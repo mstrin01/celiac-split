@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import AboutPreview from "../components/AboutPreview";
-
+import HomeHighlights from "../components/HomeHighlights";
 const Home = () => {
   return (
     <div className="app">
@@ -12,6 +12,7 @@ const Home = () => {
       <main>
         <Hero />
         <AboutPreview />
+        <HomeHighlights />
       </main>
 
       
