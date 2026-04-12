@@ -11,17 +11,6 @@
   border-bottom: 1px solid #d0e8f2;
 }
 
-.donation-label {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 30px;
-  background: #e8f4fa;
-  color: #084f6e;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
 .donations-hero h1 {
   font-size: 48px;
   color: #084f6e;
@@ -36,7 +25,7 @@
   color: #5a7a8a;
 }
 
-/* CARD */
+/* DONATION CARD */
 .donation-card {
   max-width: 900px;
   margin: 60px auto;
@@ -52,16 +41,8 @@
   margin-bottom: 28px;
 }
 
-/* PAYMENT + QR LAYOUT */
-.donation-layout {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 32px;
-}
-
+/* PAYMENT INFO */
 .payment-info {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -84,31 +65,41 @@
   text-align: right;
 }
 
-/* QR */
-.qr-box {
-  flex-shrink: 0;
-  text-align: center;
+/* QR SECTION CARD */
+.qr-code {
+  max-width: 900px;
+  margin: 24px auto 0;
+  padding: 0 5%;
+}
+
+.qr-section {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8f4fa;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  text-align: center;
 }
 
-.qr-box p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.2;
+.qr-label {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  line-height: 1.1;
   color: #5a7a8a;
+  font-weight: 500;
 }
 
-.qr-box img {
-  width: 160px;
-  height: 160px;
+.qr-image {
+  width: 180px;
+  height: 180px;
   object-fit: contain;
-  margin-top: 0;
+  display: block;
+  margin: 0;
 }
-
-/* MESSAGE */
+/* THANK YOU MESSAGE */
 .donation-message {
   text-align: center;
   padding: 70px 5%;
@@ -146,13 +137,9 @@
     margin: 50px auto;
   }
 
-  .donation-layout {
-    gap: 24px;
-  }
-
-  .qr-box img {
-    width: 150px;
-    height: 150px;
+  .qr-image {
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -185,12 +172,6 @@
     margin-bottom: 24px;
   }
 
-  .donation-layout {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
   .payment-info {
     width: 100%;
     gap: 16px;
@@ -214,9 +195,19 @@
     word-break: break-word;
   }
 
-  .qr-box img {
-    width: 140px;
-    height: 140px;
+  .qr-code {
+  width: 92%;
+  padding: 0;
+  }
+
+  .qr-section {
+    border-radius: 18px;
+    padding: 20px 16px;
+  }
+
+  .qr-image {
+    width: 150px;
+    height: 150px;
   }
 
   .donation-message {

@@ -37,8 +37,6 @@ const DonationsPage = () => {
             <strong>HR2824070001100574935</strong>
           </div>
 
-          
-
           <div className="payment-row">
             <span>Poziv na broj</span>
             <strong>OIB platitelja</strong>
@@ -53,6 +51,13 @@ const DonationsPage = () => {
             <span>Model</span>
             <strong>HR00</strong>
           </div>
+        </div>
+      </section>
+
+      <section className="qr-code">
+        <div className="qr-section">
+          <p className="qr-label">...ili skenirajte qr kod za uplatu</p>
+          <img src={qr} alt="QR kod za bankovno plaćanje" className="qr-image" />
         </div>
       </section>
 
