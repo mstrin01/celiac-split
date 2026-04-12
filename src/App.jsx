@@ -6,14 +6,15 @@ import Home from "./pages/Home";
 import ContactPage from "./components/ContactPage";
 import GuidePage from "./pages/GuidePage";
 import DonationsPage from "./pages/DonationsPage";
-import HomeHighlights
- from "./components/HomeHighlights";
+import HomeHighlights from "./components/HomeHighlights";
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <div className="app">
         <Navbar />
 
