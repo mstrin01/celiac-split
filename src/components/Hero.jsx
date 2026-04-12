@@ -16,8 +16,7 @@ const Hero = () => {
         </h1>
 
         <p>
-          Povezujemo osobe s celijakijom, njihove obitelji i stručnjake kroz
-          edukaciju, događanja i bezglutenski vodič kroz Split i okolinu.
+          Niste sami - tu smo za vas.
         </p>
 
         <div className="hero-buttons">
@@ -25,8 +24,8 @@ const Hero = () => {
             Postanite član
           </Link>
 
-          <Link to="/about" className="hero-btn secondary">
-            Saznajte više
+          <Link to="/contact" className="hero-btn secondary">
+            Povežimo se
           </Link>
         </div>
       </div>

@@ -20,7 +20,7 @@ const AboutPage = () => {
       <section className="about-cards">
         <div className="about-card">
           <span>🤝</span>
-          <h3>Povezujemo ljude</h3>
+          <h3>Povezujemo</h3>
           <p>
             Okupljamo osobe s celijakijom, njihove obitelji i sve
             koji žele sigurniji život bez glutena.
@@ -38,10 +38,10 @@ const AboutPage = () => {
 
         <div className="about-card">
           <span>📍</span>
-          <h3>Sigurna mjesta</h3>
+          <h3>Preporučujemo</h3>
           <p>
-            Preporučujemo restorane, pekare i trgovine
-            u Splitu i okolici.
+            Predlažemo mjesta s bezglutenskom ponudom
+              u Splitu.
           </p>
         </div>
       </section>

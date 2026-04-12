@@ -6,24 +6,40 @@ const AboutPreview = () => {
   return (
     <section className="about-preview">
       <div className="about-preview-content">
-        <h2 className="section-title">Tko smo? </h2>
+        <h2 className="preview-heading">Rad udruge</h2>
 
-        <p className="intro-text">
-          Udruga koja okuplja osobe s celijakijom i njihove obitelji
-          na području Splita i okolice.
-        </p>
+        <div className="preview-cards">
+          <div className="preview-card">
+            <span>🤝</span>
+            <h3>Povezujemo</h3>
+            <p>
+              Okupljamo osobe s celijakijom, njihove obitelji i sve
+              koji žele sigurniji život bez glutena.
+            </p>
+          </div>
 
-        <p className="about-description">
-          Naš cilj je promicanje svijesti, podrške i edukacije osoba
-          oboljelih od celijakije i srodnih kroničnih autoimunih
-          bolesti probavnog sustava.
-        </p>
+          <div className="preview-card">
+            <span>📚</span>
+            <h3>Educiramo</h3>
+            <p>
+              Dijelimo provjerene informacije, iskustva i savjete
+              za svakodnevni život bez glutena.
+            </p>
+          </div>
 
-        <Link to="/contact" className="about-preview-btn">
-          Povežimo se
+          <div className="preview-card">
+            <span>📍</span>
+            <h3>Preporučujemo</h3>
+            <p>
+              Predlažemo mjesta s bezglutenskom ponudom
+              u Splitu.
+            </p>
+          </div>
+        </div>
+
+        <Link to="/about" className="about-preview-btn">
+          Saznajte više
         </Link>
-        
-
       </div>
     </section>
   );
