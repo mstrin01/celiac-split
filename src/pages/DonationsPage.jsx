@@ -22,10 +22,6 @@ const DonationsPage = () => {
             <strong>Splitsko-dalmatinsko društvo za celijakiju</strong>
           </div>
           
-          <div className="payment-row">
-            <span>OIB</span>
-            <strong>42781739565</strong>
-          </div>
 
           <div className="payment-row">
             <span>Adresa</span>
@@ -56,8 +52,15 @@ const DonationsPage = () => {
 
       <section className="qr-code">
         <div className="qr-section">
-          <p className="qr-label">...ili skenirajte qr kod za uplatu</p>
+          <p className="qr-label">...ili skenirajte za uplatu</p>
           <img src={qr} alt="QR kod za bankovno plaćanje" className="qr-image" />
+          <a
+            href={qr}
+            download="qr-kod-donacija.jpg"
+            className="download-qr-btn"
+          >
+            Preuzmi barkod
+          </a>
         </div>
       </section>
 

@@ -29,7 +29,7 @@ const ContactPage = () => {
               <div className="contact-item-icon">📞</div>
               <div className="contact-item-text">
                 <span>Telefon</span>
-                <a href="tel:+38521395062">+385 21 395 062</a>
+                <a href="tel:+385998718788">099 871 8788</a>
               </div>
             </div>
 

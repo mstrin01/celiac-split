@@ -6,7 +6,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* TOP LAYOUT: left logo, center sitemap, right text */
 .footer-top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -16,7 +15,7 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* LEFT */
+
 .footer-brand .logo {
   display: flex;
   align-items: center;
@@ -43,10 +42,11 @@ footer {
 
 .logo-text span:last-child {
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  color: white;
 }
 
-/* CENTER */
+
 .footer-links {
   text-align: center;
 }
@@ -80,7 +80,7 @@ footer {
   opacity: 1;
 }
 
-/* RIGHT */
+
 .footer-info {
   text-align: right;
   font-size: 12px;
@@ -88,7 +88,7 @@ footer {
   opacity: 0.8;
 }
 
-/* BOTTOM */
+
 .footer-bottom {
   padding-top: 18px;
   text-align: center;

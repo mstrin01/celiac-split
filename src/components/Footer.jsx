@@ -19,7 +19,7 @@ const Footer = () => {
               <span style={{ color: "white" }}>
                 Splitsko-dalmatinsko
               </span>
-              <span style={{ color: "rgba(255,255,255,0.55)" }}>
+              <span style={{ color: "white" }}>
                 društvo za celijakiju
               </span>
             </div>
@@ -40,8 +40,7 @@ const Footer = () => {
         
         <div className="footer-info">
           <p>
-            Podrška, edukacija i zajednica za osobe s
-            celijakijom u Splitsko-dalmatinskoj županiji.
+            Ni bokun glutena - ni bokun problema!
           </p>
         </div>
       </div>
