@@ -10,6 +10,7 @@ import HomeHighlights from "./components/HomeHighlights";
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import ScrollToTop from "./components/ScrollToTop";
+import MembershipPage from "./pages/MembershipPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/donations" element={<DonationsPage />} />
+            <Route path="/join" element={<MembershipPage />} />
           </Routes>
         </main>
 

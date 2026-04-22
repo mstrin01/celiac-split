@@ -40,9 +40,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <a href="/join" className="btn-nav">
+          <Link to="/join" className="btn-nav">
             Postanite član
-          </a>
+          </Link>
         </li>
       </ul>
 
