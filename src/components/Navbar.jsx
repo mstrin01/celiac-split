@@ -40,7 +40,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/join" className="btn-nav">
+          <Link to="/join" className="btn-nav" onClick={()=>setMenuOpen(false)}>
             Postanite član
           </Link>
         </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
         className="hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        ☰
+        {menuOpen ? "✕" : "☰"}
       </button>
     </nav>
   );

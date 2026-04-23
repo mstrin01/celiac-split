@@ -8,9 +8,11 @@ const MembershipPage = () => {
 
       {/* HERO */}
       <section className="membership-hero">
-        <h1>Postanite član naše udruge 💙</h1>
+        <h1>
+          Postanite član naše udruge!
+        </h1>
         <p>
-          Dva su jednostavna koraka — ispunite obrazac i uplatite  članarinu.
+          Brzo je i jednostavno — ispunite obrazac i uplatite  članarinu.
         </p>
       </section>
 
@@ -31,6 +33,7 @@ const MembershipPage = () => {
           >
             Ispuni obrazac
           </a>
+          
         </div>
 
         {/* STEP 2 */}

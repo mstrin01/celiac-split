@@ -23,9 +23,15 @@
 }
 
 .membership-hero h1 {
-  font-size: 44px;
-  color: #084f6e;
-  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color:#084f6e;
+}
+
+.heart {
+  font-size: 24px;
 }
 
 .membership-hero p {
