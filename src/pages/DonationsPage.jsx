@@ -25,7 +25,7 @@ const DonationsPage = () => {
 
           <div className="payment-row">
             <span>Adresa</span>
-            <strong>Ul. ban Mladenova 9, Split</strong>
+            <strong>Ban Mladenova 9, Split</strong>
           </div>
 
           <div className="payment-row">
