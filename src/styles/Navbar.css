@@ -88,6 +88,10 @@ nav .logo-text span:last-child {
 .nav-links a.active {
   color: #084F6E;
   font-weight: 600;
+  background: #E8F4FA;
+}
+.active-btn {
+  background: #0d6a92;
 }
 
 .btn-nav {

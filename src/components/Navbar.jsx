@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -16,37 +16,62 @@ const Navbar = () => {
         </div>
       </Link>
 
-      {/* Desktop links */}
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+        
         <li>
-          <Link to="/" onClick={() => setMenuOpen(false)}>Početna</Link>
+          <NavLink to="/" onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
+            Početna
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>O nama</Link>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
+            O nama
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/guide" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/guide" onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
             Bezglutenski vodič
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/donations" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/donations" onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
             Donacije
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/contact" onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => isActive ? "active" : ""}
+          >
             Kontakt
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/join" className="btn-nav" onClick={()=>setMenuOpen(false)}>
+          <NavLink 
+            to="/join"
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              isActive ? "btn-nav active-btn" : "btn-nav"
+            }
+          >
             Postanite član
-          </Link>
+          </NavLink>
         </li>
+
       </ul>
 
-      {/* Mobile hamburger */}
       <button
         className="hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
