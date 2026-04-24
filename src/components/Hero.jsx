@@ -16,7 +16,7 @@ const Hero = () => {
         </h1>
 
         <p>
-          Niste sami - tu smo za vas.
+          Ni bokun glutena - ni bokun problema!
         </p>
 
         <div className="hero-buttons">

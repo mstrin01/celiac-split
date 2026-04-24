@@ -36,9 +36,8 @@ nav .logo {
 .logo-icon {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  border: 2px solid #084F6E;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 nav .logo-text {

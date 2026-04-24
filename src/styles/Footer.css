@@ -20,13 +20,15 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
+  filter: brightness(0) invert(1);
 }
 
-.logo-icon {
+footer-brand .logo-icon {
   width: 46px;
   height: 46px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .logo-text {
