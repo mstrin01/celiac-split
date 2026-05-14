@@ -25,14 +25,9 @@ const MembershipPage = () => {
           <h3>Ispunite prijavu</h3>
           <p>Ispunite Google obrazac s Vašim podacima.</p>
 
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfEJ9Om7Y7ISeHHQPIzRK7d3S0o5XDeNrlO6BXqQo7EmgEcxQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="step-btn"
-          >
-            Ispuni obrazac
-          </a>
+          <button className="step-btn disabled-btn">
+            Ispuni obrazac (uskoro)
+          </button>
           
         </div>
 
