@@ -59,7 +59,7 @@ const ContactPage = () => {
 
         <div className="social-links-vertical">
           <a
-            href="https://www.facebook.com/splitglutenfree/?locale=hr_HR"
+            href="https://www.facebook.com/celiacsplit"
             target="_blank"
             rel="noopener noreferrer"
             className="social-big-btn"
