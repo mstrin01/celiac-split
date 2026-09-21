@@ -2,13 +2,13 @@ import React from "react";
 import "../styles/AboutPage.css";
 import { Link } from "react-router-dom";
 
+
 const AboutPage = () => {
   return (
     <main className="about-page">
       
       <section className="about-hero">
-        
-        <h1>Tu smo za vas  — zajedno je lakše 💙</h1>
+        <h1>Tu smo za vas — zajedno je lakše 💙</h1>
         <p>
           Splitsko-dalmatinsko društvo za celijakiju djeluje s ciljem
           povezivanja, edukacije i stvaranja sigurne zajednice
@@ -41,7 +41,7 @@ const AboutPage = () => {
           <h3>Preporučujemo</h3>
           <p>
             Predlažemo mjesta s bezglutenskom ponudom
-              u Splitu.
+            u Splitu.
           </p>
         </div>
       </section>
@@ -73,16 +73,44 @@ const AboutPage = () => {
         </ul>
       </section>
 
+      {/* STATUT */}
+      <section className="about-statute">
+        <div className="statute-content">
+          <span className="statute-icon">📄</span>
+
+          <div>
+            <h2>Dokumentacija udruge</h2>
+            <p>
+              Želite saznati više o radu i organizaciji naše udruge?
+              U statutu možete pronaći informacije o ciljevima,
+              djelatnostima i načinu rada Splitsko-dalmatinskog
+              društva za celijakiju.
+            </p>
+          </div>
+
+          <a
+          href="/documents/statut.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="statute-btn"
+          >
+          Preuzmi statut
+        </a>
+        </div>
+      </section>
+
       
       <section className="about-cta">
         <h2>
           Ako si iz Splita ili okolice i živiš bez glutena —
           na pravom si mjestu 💙
         </h2>
+
         <Link to="/contact" className="about-cta-btn">
           Povežimo se
         </Link>
       </section>
+
     </main>
   );
 };
