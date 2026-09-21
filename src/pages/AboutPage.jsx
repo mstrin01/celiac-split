@@ -94,7 +94,7 @@ const AboutPage = () => {
           rel="noopener noreferrer"
           className="statute-btn"
           >
-          Preuzmi statut
+          Pročitaj statut
         </a>
         </div>
       </section>
